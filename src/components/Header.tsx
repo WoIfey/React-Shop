@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 export default function Header() {
 	return (
 		<header className="mb-4 mt-4">
@@ -5,7 +7,7 @@ export default function Header() {
 				<div className="flex">
 					<a href="/">
 						<img
-							src="/bag.svg"
+							src="/ReactShop/bag.svg"
 							alt="bag"
 							className="w-12 h-12 sm:w-16 sm:h-16 p-3 bg-[#84C865] hover:bg-[#89d765] rounded-full mr-5"
 						/>
@@ -17,40 +19,40 @@ export default function Header() {
 							className="h-10 sm:h-12 max-w-52 rounded-tl-xl rounded-bl-xl border-4 px-5 text-lg outline-none"
 						/>
 						<button className="h-10 sm:h-12 w-12 rounded-tr-xl rounded-br-xl border-4 border-l-0 bg-white">
-							<img src="/search.svg" alt="search" className="px-2.5" />
+							<img src="/ReactShop/search.svg" alt="search" className="px-2.5" />
 						</button>
 					</div>
 				</div>
 				<ul className="flex list-none invisible lg:visible my-4">
-					<li className="mx-3 cursor-pointer hover:text-[#4f4f4f]">
-						<a href="/">Home</a>
+					<li className="mx-6 cursor-pointer hover:text-[#4f4f4f]">
+						<Link to="/ReactShop">Home</Link>
 					</li>
-					<li className="mx-3 cursor-pointer hover:text-[#4f4f4f]">
-						<a href="/">Button</a>
+					<li className="mx-6 cursor-pointer hover:text-[#4f4f4f]">
+						<Link to="/ReactShop/shop">Shop</Link>
 					</li>
-					<li className="mx-3 cursor-pointer hover:text-[#4f4f4f]">
-						<a href="/">Button</a>
+					<li className="mx-6 cursor-pointer hover:text-[#4f4f4f]">
+						<Link to="/ReactShop/checkout">Checkout</Link>
 					</li>
 				</ul>
 				<div className="bg-[#E6E6E6] max-w-64 h-16 rounded-lg flex items-center justify-center px-4">
 					<div className="flex mr-2">
 						<a href="/">
 							<img
-								src="/inbox.svg"
+								src="/ReactShop/inbox.svg"
 								alt=""
 								className="w-10 h-10 p-2 hover:bg-[#D3D3D3] rounded-md"
 							/>
 						</a>
 						<a href="/">
 							<img
-								src="/message.svg"
+								src="/ReactShop/message.svg"
 								alt=""
 								className="w-10 h-10 p-2 hover:bg-[#D3D3D3] rounded-md"
 							/>
 						</a>
 						<a href="/">
 							<img
-								src="/shop.svg"
+								src="/ReactShop/shop.svg"
 								alt=""
 								className="w-10 h-10 p-2 hover:bg-[#D3D3D3] rounded-md"
 							/>
@@ -60,7 +62,7 @@ export default function Header() {
 						Philip Huynh
 					</p>
 					<img
-						src="/arrow.svg"
+						src="/ReactShop/arrow.svg"
 						alt=""
 						className="w-10 h-10 pt-2 pb-1.5 ml-3 hover:bg-[#D3D3D3] rounded-md"
 					/>

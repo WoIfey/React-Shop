@@ -5,28 +5,28 @@ export default function Footer() {
 			<div className="flex justify-center">
 				<a href="/" target="_blank" className="mx-2">
 					<img
-						src="/github.svg"
+						src="/ReactShop/github.svg"
 						alt="github"
 						className="w-12 h-12 sm:w-16 sm:h-16 bg-[#FFFFFF] hover:bg-[#ededed] hover:transition-all delay-150 rounded-full cursor-pointer p-3.5"
 					/>
 				</a>
 				<a href="/" target="_blank" className="mx-2">
 					<img
-						src="/x.svg"
+						src="/ReactShop/x.svg"
 						alt="x"
 						className="w-12 h-12 sm:w-16 sm:h-16 bg-[#FFFFFF] hover:bg-[#ededed] hover:transition-all delay-150 rounded-full cursor-pointer p-3.5"
 					/>
 				</a>
 				<a href="/" target="_blank" className="mx-2">
 					<img
-						src="/linkedin.svg"
+						src="/ReactShop/linkedin.svg"
 						alt="linkedin"
 						className="w-12 h-12 sm:w-16 sm:h-16 bg-[#FFFFFF] hover:bg-[#ededed] hover:transition-all delay-150 rounded-full cursor-pointer p-3.5"
 					/>
 				</a>
 				<a href="/" target="_blank" className="mx-2">
 					<img
-						src="/youtube.svg"
+						src="/ReactShop/youtube.svg"
 						alt="youtube"
 						className="w-12 h-12 sm:w-16 sm:h-16 bg-[#FFFFFF] hover:bg-[#ededed] hover:transition-all delay-150 rounded-full cursor-pointer p-3.5"
 					/>
