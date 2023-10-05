@@ -1,6 +1,6 @@
 export default function Footer() {
 	return (
-		<footer className="bg-[#D9D9D9] text-center py-6 md:py-8 mt-10 md:mt-14">
+		<footer className="bg-[#D9D9D9] text-center py-6 md:py-8 mt-16 md:mt-20">
 			<p className="text-lg sm:text-2xl mb-4">© 2023 Company Name </p>
 			<div className="flex justify-center">
 				<a href="/" target="_blank" className="mx-2">
