@@ -16,6 +16,9 @@ module.exports = {
       },
       fontFamily: {
         nunito: "Nunito"
+      },
+      colors: {
+        sale: '#AE5353',
       }
     },
   },

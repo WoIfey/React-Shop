@@ -1,3 +1,4 @@
+import Product from '../Product.tsx'
 export default function Shop() {
 	return (
 		<div className="flex justify-evenly items-center flex-col overflow-x-auto">
@@ -6,61 +7,131 @@ export default function Shop() {
 					<div className="bg-white w-full h-[450px] rounded-[15px] m-[1.5rem] bg-3 bg-center bg-no-repeat bg-cover shadow-box hover:shadow-hover cursor-pointer mb-4 hover:transition-all delay-200"></div>
 				</div>
 				<div className="flex overflow-x-auto">
-					<div className="bg-white w-[50%] md:w-[45%] lg:w-[25%] h-[250px] rounded-[15px] m-[1.5rem] bg-4 bg-center bg-no-repeat bg-cover flex-shrink-0 shadow-box hover:shadow-hover cursor-pointer mb-4 relative hover:transition-all delay-200">
-						<button className="bg-[#6FD141] w-15 h-15 rounded-full hover:bg-[#8be262] absolute bottom-4 right-4">
-							<img src="/ReactShop/add.svg" alt="+" className="p-1.5" />
-						</button>
-					</div>
-					<div className="bg-white w-[50%] md:w-[45%] lg:w-[25%] h-[250px] rounded-[15px] m-[1.5rem] bg-1 bg-center bg-no-repeat bg-cover flex-shrink-0 shadow-box hover:shadow-hover cursor-pointer mb-4 relative hover:transition-all delay-200">
-						<button className="bg-[#6FD141] w-15 h-15 rounded-full hover:bg-[#8be262] absolute bottom-4 right-4">
-							<img src="/ReactShop/add.svg" alt="+" className="p-1.5" />
-						</button>
-					</div>
-					<div className="bg-white w-[50%] md:w-[45%] lg:w-[25%] h-[250px] rounded-[15px] m-[1.5rem] bg-5 bg-center bg-no-repeat bg-cover flex-shrink-0 shadow-box hover:shadow-hover cursor-pointer mb-4 relative hover:transition-all delay-200">
-						<button className="bg-[#6FD141] w-15 h-15 rounded-full hover:bg-[#8be262] absolute bottom-4 right-4">
-							<img src="/ReactShop/add.svg" alt="+" className="p-1.5" />
-						</button>
-					</div>
-					<div className="bg-white w-[50%] md:w-[45%] lg:w-[25%] h-[250px] rounded-[15px] m-[1.5rem] bg-6 bg-left bg-no-repeat bg-cover flex-shrink-0 shadow-box hover:shadow-hover cursor-pointer mb-4 relative hover:transition-all delay-200">
-						<button className="bg-[#6FD141] w-15 h-15 rounded-full hover:bg-[#8be262] absolute bottom-4 right-4">
-							<img src="/ReactShop/add.svg" alt="+" className="p-1.5" />
-						</button>
-					</div>
-					<div className="bg-white w-[50%] md:w-[45%] lg:w-[25%] h-[250px] rounded-[15px] m-[1.5rem] bg-3 bg-center bg-no-repeat bg-cover flex-shrink-0 shadow-box hover:shadow-hover cursor-pointer mb-4 relative hover:transition-all delay-200">
-						<button className="bg-[#6FD141] w-15 h-15 rounded-full hover:bg-[#8be262] absolute bottom-4 right-4">
-							<img src="/ReactShop/add.svg" alt="+" className="p-1.5" />
-						</button>
-					</div>
+					<Product
+						img={'/ReactShop/samsung1.jpg'}
+						newly={'hidden'}
+						sale={'hidden'}
+						color={''}
+						phone={'S23 Ultra 5G'}
+						price={'1299€'}
+						sPrice={''}
+						date={'12.10'}
+					/>
+					<Product
+						img={'/ReactShop/samsung2.jpg'}
+						newly={''}
+						sale={'hidden'}
+						color={''}
+						phone={'S22 Ultra 5G'}
+						price={'1199€'}
+						sPrice={''}
+						date={'15.10'}
+					/>
+					<Product
+						img={'/ReactShop/samsung3.jpg'}
+						newly={'hidden'}
+						sale={''}
+						color={'sale'}
+						phone={'Galazy A14'}
+						price={'1299€'}
+						sPrice={'1099€'}
+						date={'17.10'}
+					/>
+					<Product
+						img={'/ReactShop/samsung4.jpg'}
+						newly={'hidden'}
+						sale={'hidden'}
+						color={''}
+						phone={'Galaxy A14 5G'}
+						price={'399€'}
+						sPrice={''}
+						date={'12.10'}
+					/>
+					<Product
+						img={'/ReactShop/samsung5.jpg'}
+						newly={'hidden'}
+						sale={'hidden'}
+						color={''}
+						phone={'Galaxy A04s'}
+						price={'169€'}
+						sPrice={''}
+						date={'12.10'}
+					/>
+					<Product
+						img={'/ReactShop/samsung6.jpg'}
+						newly={''}
+						sale={'hidden'}
+						color={''}
+						phone={'Galaxy S23+'}
+						price={'1599€'}
+						sPrice={''}
+						date={'21.10'}
+					/>
 				</div>
 				<div className="flex justify-center flex-wrap md:flex-nowrap">
-					<div className="bg-white w-full h-[450px] rounded-[15px] m-[1.5rem] bg-2 bg-center bg-no-repeat bg-cover shadow-box hover:shadow-hover cursor-pointer mb-4 hover:transition-all delay-200"></div>
+					<div className="bg-white w-full h-[450px] rounded-[15px] m-[1.5rem] my-[4rem] bg-2 bg-center bg-no-repeat bg-cover shadow-box hover:shadow-hover cursor-pointer mb-4 hover:transition-all delay-200"></div>
 				</div>
 				<div className="flex overflow-x-auto">
-					<div className="bg-white w-[50%] md:w-[45%] lg:w-[25%] h-[250px] rounded-[15px] m-[1.5rem] bg-4 bg-center bg-no-repeat bg-cover flex-shrink-0 shadow-box hover:shadow-hover cursor-pointer mb-4 relative hover:transition-all delay-200">
-						<button className="bg-[#6FD141] w-15 h-15 rounded-full hover:bg-[#8be262] absolute bottom-4 right-4">
-							<img src="/ReactShop/add.svg" alt="+" className="p-1.5" />
-						</button>
-					</div>
-					<div className="bg-white w-[50%] md:w-[45%] lg:w-[25%] h-[250px] rounded-[15px] m-[1.5rem] bg-1 bg-center bg-no-repeat bg-cover flex-shrink-0 shadow-box hover:shadow-hover cursor-pointer mb-4 relative hover:transition-all delay-200">
-						<button className="bg-[#6FD141] w-15 h-15 rounded-full hover:bg-[#8be262] absolute bottom-4 right-4">
-							<img src="/ReactShop/add.svg" alt="+" className="p-1.5" />
-						</button>
-					</div>
-					<div className="bg-white w-[50%] md:w-[45%] lg:w-[25%] h-[250px] rounded-[15px] m-[1.5rem] bg-5 bg-center bg-no-repeat bg-cover flex-shrink-0 shadow-box hover:shadow-hover cursor-pointer mb-4 relative hover:transition-all delay-200">
-						<button className="bg-[#6FD141] w-15 h-15 rounded-full hover:bg-[#8be262] absolute bottom-4 right-4">
-							<img src="/ReactShop/add.svg" alt="+" className="p-1.5" />
-						</button>
-					</div>
-					<div className="bg-white w-[50%] md:w-[45%] lg:w-[25%] h-[250px] rounded-[15px] m-[1.5rem] bg-6 bg-left bg-no-repeat bg-cover flex-shrink-0 shadow-box hover:shadow-hover cursor-pointer mb-4 relative hover:transition-all delay-200">
-						<button className="bg-[#6FD141] w-15 h-15 rounded-full hover:bg-[#8be262] absolute bottom-4 right-4">
-							<img src="/ReactShop/add.svg" alt="+" className="p-1.5" />
-						</button>
-					</div>
-					<div className="bg-white w-[50%] md:w-[45%] lg:w-[25%] h-[250px] rounded-[15px] m-[1.5rem] bg-3 bg-center bg-no-repeat bg-cover flex-shrink-0 shadow-box hover:shadow-hover cursor-pointer mb-4 relative hover:transition-all delay-200">
-						<button className="bg-[#6FD141] w-15 h-15 rounded-full hover:bg-[#8be262] absolute bottom-4 right-4">
-							<img src="/ReactShop/add.svg" alt="+" className="p-1.5" />
-						</button>
-					</div>
+					<Product
+						img={'/ReactShop/samsung1.jpg'}
+						newly={''}
+						sale={'hidden'}
+						color={''}
+						phone={'iPhone 15 Pro Max'}
+						price={'1599€'}
+						sPrice={''}
+						date={'12.10'}
+					/>
+					<Product
+						img={'/ReactShop/samsung2.jpg'}
+						newly={''}
+						sale={'hidden'}
+						color={''}
+						phone={'S22 Ultra 5G'}
+						price={'1199€'}
+						sPrice={''}
+						date={'15.10'}
+					/>
+					<Product
+						img={'/ReactShop/samsung3.jpg'}
+						newly={'hidden'}
+						sale={''}
+						color={'sale'}
+						phone={'Galazy A14'}
+						price={'1299€'}
+						sPrice={'1099€'}
+						date={'17.10'}
+					/>
+					<Product
+						img={'/ReactShop/samsung4.jpg'}
+						newly={'hidden'}
+						sale={'hidden'}
+						color={''}
+						phone={'Galaxy A14 5G'}
+						price={'399€'}
+						sPrice={''}
+						date={'12.10'}
+					/>
+					<Product
+						img={'/ReactShop/samsung5.jpg'}
+						newly={'hidden'}
+						sale={'hidden'}
+						color={''}
+						phone={'Galaxy A04s'}
+						price={'169€'}
+						sPrice={''}
+						date={'12.10'}
+					/>
+					<Product
+						img={'/ReactShop/samsung6.jpg'}
+						newly={''}
+						sale={'hidden'}
+						color={''}
+						phone={'Galaxy S23+'}
+						price={'1599€'}
+						sPrice={''}
+						date={'21.10'}
+					/>
 				</div>
 			</div>
 		</div>
