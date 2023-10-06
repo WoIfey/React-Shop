@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
@@ -8,14 +8,14 @@ import Layout from './components/Layout.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
 	<React.StrictMode>
-		<Router>
+		<HashRouter>
 			<Layout>
 				<Routes>
-					<Route path="/ReactShop" element={<App />} />
-					<Route path="/ReactShop/shop" element={<Shop />} />
-					<Route path="/ReactShop/checkout" element={<Checkout />} />
+					<Route path="/" element={<App />} />
+					<Route path="/shop" element={<Shop />} />
+					<Route path="/checkout" element={<Checkout />} />
 				</Routes>
 			</Layout>
-		</Router>
+		</HashRouter>
 	</React.StrictMode>
 )

@@ -25,13 +25,13 @@ export default function Header() {
 				</div>
 				<ul className="flex list-none invisible lg:visible my-4">
 					<li className="mx-6 cursor-pointer hover:text-[#4f4f4f]">
-						<Link to="/ReactShop">Home</Link>
+						<Link to="/">Home</Link>
 					</li>
 					<li className="mx-6 cursor-pointer hover:text-[#4f4f4f]">
-						<Link to="/ReactShop/shop">Shop</Link>
+						<Link to="/shop">Shop</Link>
 					</li>
 					<li className="mx-6 cursor-pointer hover:text-[#4f4f4f]">
-						<Link to="/ReactShop/checkout">Checkout</Link>
+						<Link to="/checkout">Checkout</Link>
 					</li>
 				</ul>
 				<div className="bg-[#E6E6E6] max-w-64 h-16 rounded-lg flex items-center justify-center px-4">
