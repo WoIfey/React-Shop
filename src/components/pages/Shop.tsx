@@ -1,5 +1,20 @@
-import Product from '../Product.tsx'
+import Product from '../Products'
+/* import { useState, useEffect } from 'react' */
+
 export default function Shop() {
+	/* 	const [products, setProducts] = useState([])
+
+	useEffect(() => {
+		fetch('http://10.111.3.78:3001/api/products')
+			.then(res => {
+				return res.json()
+			})
+			.then(data => {
+				console.log(data)
+				setProducts(data)
+			})
+	}, []) */
+
 	return (
 		<div className="flex justify-evenly items-center flex-col overflow-x-auto">
 			<div className="w-full max-w-[1440px]">
@@ -8,129 +23,168 @@ export default function Shop() {
 				</div>
 				<div className="flex overflow-x-auto">
 					<Product
-						img={'/ReactShop/samsung1.jpg'}
-						newly={'hidden'}
-						sale={'hidden'}
-						color={''}
-						phone={'S23 Ultra 5G'}
-						price={'1299€'}
-						sPrice={''}
-						date={'12.10'}
+						data={{
+							img: 'samsung1.jpg',
+							product: 'S23 Ultra 5G',
+							price: 1299,
+							sPrice: 0,
+							color: '',
+							date: '12.10',
+							newly: '',
+							sale: 'hidden',
+						}}
 					/>
 					<Product
-						img={'/ReactShop/samsung2.jpg'}
-						newly={''}
-						sale={'hidden'}
-						color={''}
-						phone={'S22 Ultra 5G'}
-						price={'1199€'}
-						sPrice={''}
-						date={'15.10'}
+						data={{
+							img: 'samsung2.jpg',
+							product: 'S22 Ultra 5G',
+							price: 1199,
+							sPrice: 0,
+							color: '',
+							date: '14.10',
+							newly: 'hidden',
+							sale: 'hidden',
+						}}
 					/>
 					<Product
-						img={'/ReactShop/samsung3.jpg'}
-						newly={'hidden'}
-						sale={''}
-						color={'sale'}
-						phone={'Galazy A14'}
-						price={'1299€'}
-						sPrice={'1099€'}
-						date={'17.10'}
+						data={{
+							img: 'samsung3.jpg',
+							product: 'Galaxy A14',
+							price: 399,
+							sPrice: 0,
+							color: '',
+							date: '15.10',
+							newly: 'hidden',
+							sale: 'hidden',
+						}}
 					/>
 					<Product
-						img={'/ReactShop/samsung4.jpg'}
-						newly={'hidden'}
-						sale={'hidden'}
-						color={''}
-						phone={'Galaxy A14 5G'}
-						price={'399€'}
-						sPrice={''}
-						date={'12.10'}
+						data={{
+							img: 'samsung4.jpg',
+							product: 'Galaxy A14 5G',
+							price: 199,
+							sPrice: 249,
+							color: 'text-sale',
+							date: '16.10',
+							newly: 'hidden',
+							sale: '',
+						}}
 					/>
 					<Product
-						img={'/ReactShop/samsung5.jpg'}
-						newly={'hidden'}
-						sale={'hidden'}
-						color={''}
-						phone={'Galaxy A04s'}
-						price={'169€'}
-						sPrice={''}
-						date={'12.10'}
+						data={{
+							img: 'samsung5.jpg',
+							product: 'Galaxy A04s',
+							price: 169,
+							sPrice: 0,
+							color: '',
+							date: '14.10',
+							newly: 'hidden',
+							sale: 'hidden',
+						}}
 					/>
 					<Product
-						img={'/ReactShop/samsung6.jpg'}
-						newly={''}
-						sale={'hidden'}
-						color={''}
-						phone={'Galaxy S23+'}
-						price={'1599€'}
-						sPrice={''}
-						date={'21.10'}
+						data={{
+							img: 'samsung6.jpg',
+							product: 'S21 Ultra 5G',
+							price: 1099,
+							sPrice: 0,
+							color: '',
+							date: '17.10',
+							newly: 'hidden',
+							sale: 'hidden',
+						}}
 					/>
 				</div>
 				<div className="flex justify-center flex-wrap md:flex-nowrap">
-					<div className="bg-white w-full h-[450px] rounded-[15px] m-[1.5rem] my-[4rem] bg-2 bg-center bg-no-repeat bg-cover shadow-box hover:shadow-hover cursor-pointer mb-4 hover:transition-all delay-200"></div>
+					<div className="bg-white w-full h-[450px] rounded-[15px] m-[1.5rem] my-[2rem] bg-2 bg-center bg-no-repeat bg-cover shadow-box hover:shadow-hover cursor-pointer mb-4 hover:transition-all delay-200"></div>
 				</div>
 				<div className="flex overflow-x-auto">
+					{/* 					{products.map(product => (
+						<Product data={product}></Product>
+					))} */}
 					<Product
-						img={'/ReactShop/samsung1.jpg'}
-						newly={''}
-						sale={'hidden'}
-						color={''}
-						phone={'iPhone 15 Pro Max'}
-						price={'1599€'}
-						sPrice={''}
-						date={'12.10'}
+						data={{
+							img: 'apple1.jpg',
+							product: 'IPhone 15 256GB',
+							price: 1119,
+							sPrice: 0,
+							color: '',
+							date: '12.10',
+							newly: '',
+							sale: 'hidden',
+						}}
 					/>
 					<Product
-						img={'/ReactShop/samsung2.jpg'}
-						newly={''}
-						sale={'hidden'}
-						color={''}
-						phone={'S22 Ultra 5G'}
-						price={'1199€'}
-						sPrice={''}
-						date={'15.10'}
+						data={{
+							img: 'apple2.jpg',
+							product: 'iPhone 15 512GB',
+							price: 1199,
+							sPrice: 0,
+							color: '',
+							date: '14.10',
+							newly: '',
+							sale: 'hidden',
+						}}
 					/>
 					<Product
-						img={'/ReactShop/samsung3.jpg'}
-						newly={'hidden'}
-						sale={''}
-						color={'sale'}
-						phone={'Galazy A14'}
-						price={'1299€'}
-						sPrice={'1099€'}
-						date={'17.10'}
+						data={{
+							img: 'apple3.jpg',
+							product: 'iPhone 14 Plus 512GB',
+							price: 1379,
+							sPrice: 1429,
+							color: 'text-sale',
+							date: '15.10',
+							newly: 'hidden',
+							sale: '',
+						}}
 					/>
 					<Product
-						img={'/ReactShop/samsung4.jpg'}
-						newly={'hidden'}
-						sale={'hidden'}
-						color={''}
-						phone={'Galaxy A14 5G'}
-						price={'399€'}
-						sPrice={''}
-						date={'12.10'}
+						data={{
+							img: 'apple4.jpg',
+							product: 'iPhone 12 64GB',
+							price: 619,
+							sPrice: 799,
+							color: 'text-sale',
+							date: '16.10',
+							newly: 'hidden',
+							sale: '',
+						}}
 					/>
 					<Product
-						img={'/ReactShop/samsung5.jpg'}
-						newly={'hidden'}
-						sale={'hidden'}
-						color={''}
-						phone={'Galaxy A04s'}
-						price={'169€'}
-						sPrice={''}
-						date={'12.10'}
+						data={{
+							img: 'apple5.jpg',
+							product: 'Galaxy A04s',
+							price: 169,
+							sPrice: 0,
+							color: '',
+							date: '14.10',
+							newly: 'hidden',
+							sale: 'hidden',
+						}}
 					/>
 					<Product
-						img={'/ReactShop/samsung6.jpg'}
-						newly={''}
-						sale={'hidden'}
-						color={''}
-						phone={'Galaxy S23+'}
-						price={'1599€'}
-						sPrice={''}
-						date={'21.10'}
+						data={{
+							img: 'apple6.jpg',
+							product: 'S21 Ultra 5G',
+							price: 1099,
+							sPrice: 0,
+							color: '',
+							date: '17.10',
+							newly: 'hidden',
+							sale: 'hidden',
+						}}
+					/>
+					<Product
+						data={{
+							img: 'apple7.jpg',
+							product: 'S21 Ultra 5G',
+							price: 1099,
+							sPrice: 0,
+							color: '',
+							date: '17.10',
+							newly: 'hidden',
+							sale: 'hidden',
+						}}
 					/>
 				</div>
 			</div>
