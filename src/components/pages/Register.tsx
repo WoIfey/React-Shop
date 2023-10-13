@@ -1,7 +1,21 @@
+import { useState, useEffect } from 'react'
+
 export default function Register() {
+	const [user, setUser] = useState([])
+
+	useEffect(() => {
+		fetch('http://10.111.3.78:3001/api/users')
+			.then(res => {
+				return res.json()
+			})
+			.then(data => {
+				setUser(data)
+			})
+	}, [])
+
 	return (
 		<div className="flex justify-center items-center">
-			<div className="bg-[#eaeaea] p-8 rounded-lg max-w-md w-full my-48">
+			<div className="bg-[#eaeaea] p-8 rounded-lg max-w-md w-full my-[180px]">
 				<h2 className="text-2xl font-bold mb-4">Register</h2>
 				<form>
 					<div className="mb-4">

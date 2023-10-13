@@ -125,7 +125,7 @@ export default function Search() {
 					<span>
 						<img
 							src="/ReactShop/icons/arrow.svg"
-							alt="linkedin"
+							alt="back"
 							className="mr-4 w-12 h-12 sm:w-16 sm:h-16 hover:bg-[#f1f1f1] transition duration-150 rotate-90 rounded-full cursor-pointer p-3.5"
 						/>
 					</span>
@@ -144,7 +144,7 @@ export default function Search() {
 					<span>
 						<img
 							src="/ReactShop/icons/arrow.svg"
-							alt="linkedin"
+							alt="next"
 							className="ml-4 w-12 h-12 sm:w-16 sm:h-16 hover:bg-[#f1f1f1] transition duration-150 -rotate-90 rounded-full cursor-pointer p-3.5"
 						/>
 					</span>

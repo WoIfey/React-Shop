@@ -1,6 +1,6 @@
 export default function Checkout() {
 	return (
-		<div className="flex justify-evenly items-center mx-20 mt-10">
+		<div className="flex justify-evenly items-center mx-20 mt-16">
 			<div className="w-full max-w-[1440px] flex">
 				<div className="w-full">
 					<div className="flex mx-5 font-bold text-xl">
