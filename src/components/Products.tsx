@@ -13,15 +13,15 @@ type Products = {
 
 export default function Product({ data }: Products) {
 	return (
-		<div className="flex justify-end flex-col bg-white w-[18%] max-h-[350px] rounded-[15px] m-[1rem] flex-shrink-0 shadow-box hover:shadow-hover cursor-pointer mb-4 relative transition-all delay-200">
+		<div className="flex justify-end flex-col bg-white w-[18%] max-h-[350px] rounded-[15px] m-[1rem] flex-shrink-0 shadow-box hover:shadow-hover cursor-pointer mb-4 relative transition duration-150">
 			<div className="flex justify-center flex-col">
 				<img
-					src={'/ReactShop/Products/' + data.img}
+					src={'/ReactShop/products/' + data.img}
 					alt="Phone"
 					className="w-full rounded-[15px] object-scale-down h-[200px]"
 				/>
-				<p className="text-xl mx-3 mt-2">{data.product}</p>
-				<div className="flex mx-3 mb-2">
+				<p className="text-xl mx-3 mb-1 truncate">{data.product}</p>
+				<div className="flex mx-3 mb-3">
 					<span
 						className={`bg-[#28B95D] mr-1.5 ${data.newly} rounded-xl px-3 text-lg text-white`}
 					>
@@ -39,7 +39,7 @@ export default function Product({ data }: Products) {
 				</div>
 			</div>
 			<button className="bg-[#6FD141] w-10 h-10 rounded-full hover:bg-[#8be262] absolute bottom-10 right-3">
-				<img src="/ReactShop/add.svg" alt="Add to Cart" className="p-1.5" />
+				<img src="/ReactShop/icons/add.svg" alt="Add to Cart" className="p-1.5" />
 			</button>
 			<div className="flex justify-between items-center px-4 py-1 bg-gray-300 rounded-b-xl w-full">
 				<p>Delivery</p>

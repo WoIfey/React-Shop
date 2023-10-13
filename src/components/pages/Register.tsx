@@ -1,7 +1,7 @@
 export default function Register() {
 	return (
 		<div className="flex justify-center items-center">
-			<div className="bg-[#eaeaea] p-8 rounded-xl shadow-lg max-w-md w-full my-32">
+			<div className="bg-[#eaeaea] p-8 rounded-lg max-w-md w-full my-48">
 				<h2 className="text-2xl font-bold mb-4">Register</h2>
 				<form>
 					<div className="mb-4">
@@ -22,7 +22,7 @@ export default function Register() {
 					</div>
 					<button
 						type="submit"
-						className="cursor-default px-2 py-1 mr-3 bg-[#1A6BE5] hover:bg-[#1A57B4] text-white rounded-md"
+						className="cursor-default px-2 py-1 mr-3 bg-[#1A6BE5] hover:bg-[#1A57B4] text-white rounded-md transition duration-150"
 					>
 						Register
 					</button>

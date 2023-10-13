@@ -19,7 +19,7 @@ export default function Shop() {
 		<div className="flex justify-evenly items-center flex-col overflow-x-auto">
 			<div className="w-full max-w-[1440px]">
 				<div className="flex justify-center flex-wrap md:flex-nowrap">
-					<div className="bg-white w-full h-[450px] rounded-[15px] m-[1.5rem] bg-3 bg-center bg-no-repeat bg-cover shadow-box hover:shadow-hover cursor-pointer mb-4 hover:transition-all delay-200"></div>
+					<div className="bg-white w-full h-[450px] rounded-[15px] m-[1.5rem] bg-3 bg-center bg-no-repeat bg-cover shadow-box cursor-pointer mb-4"></div>
 				</div>
 				<div className="flex overflow-x-auto">
 					<Product
@@ -96,7 +96,7 @@ export default function Shop() {
 					/>
 				</div>
 				<div className="flex justify-center flex-wrap md:flex-nowrap">
-					<div className="bg-white w-full h-[450px] rounded-[15px] m-[1.5rem] my-[2rem] bg-2 bg-center bg-no-repeat bg-cover shadow-box hover:shadow-hover cursor-pointer mb-4 hover:transition-all delay-200"></div>
+					<div className="bg-white w-full h-[450px] rounded-[15px] m-[1.5rem] my-[2rem] bg-2 bg-center bg-no-repeat bg-cover shadow-box cursor-pointer mb-4"></div>
 				</div>
 				<div className="flex overflow-x-auto">
 					{/* 					{products.map(product => (
@@ -105,7 +105,7 @@ export default function Shop() {
 					<Product
 						data={{
 							img: 'apple1.jpg',
-							product: 'IPhone 15 256GB',
+							product: 'IPhone 15 256',
 							price: 1119,
 							sPrice: 0,
 							color: '',
@@ -153,8 +153,8 @@ export default function Shop() {
 					<Product
 						data={{
 							img: 'apple5.jpg',
-							product: 'Galaxy A04s',
-							price: 169,
+							product: 'iPhone SE',
+							price: 369,
 							sPrice: 0,
 							color: '',
 							date: '14.10',
@@ -165,7 +165,7 @@ export default function Shop() {
 					<Product
 						data={{
 							img: 'apple6.jpg',
-							product: 'S21 Ultra 5G',
+							product: 'iPhone 12 Pro',
 							price: 1099,
 							sPrice: 0,
 							color: '',
@@ -177,8 +177,8 @@ export default function Shop() {
 					<Product
 						data={{
 							img: 'apple7.jpg',
-							product: 'S21 Ultra 5G',
-							price: 1099,
+							product: 'iPhone 12',
+							price: 899,
 							sPrice: 0,
 							color: '',
 							date: '17.10',
