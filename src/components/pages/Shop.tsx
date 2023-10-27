@@ -99,9 +99,11 @@ export default function Shop() {
 					<div className="bg-white w-full h-[450px] rounded-[15px] m-[1.5rem] my-[2rem] bg-2 bg-center bg-no-repeat bg-cover shadow-box cursor-pointer mb-4"></div>
 				</div>
 				<div className="flex overflow-x-auto">
-					{/* 					{products.map(product => (
+					{/* 					
+					{products.map(product => (
 						<Product data={product}></Product>
-					))} */}
+					))} 
+					*/}
 					<Product
 						data={{
 							img: 'apple1.jpg',

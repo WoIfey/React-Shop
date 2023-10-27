@@ -239,14 +239,14 @@ export default function Checkout() {
 								</div>
 							</div>
 						</div>
-						<div className="flex justify-center items-end mt-5 border-b-2 pb-7 border-black">
+						<div className="flex justify-center items-end mt-5 border-b-2 pb-5 border-black">
 							<button className="w-full h-14 bg-[#EEBC30] hover:bg-[#fdc019] rounded-md transition duration-150">
 								Checkout
 							</button>
 						</div>
 						<div className="mt-6 flex items-center">
 							<img src="/ReactShop/icons/shield.svg" alt="" className="mx-4 w-6 h-6" />
-							<p className="text-[#4b4b4b]">3 Year warranty</p>
+							<p className="text-[#4b4b4b]">2 Year warranty</p>
 						</div>
 						<div className="mt-4 flex items-center">
 							<img
@@ -256,7 +256,7 @@ export default function Checkout() {
 							/>
 							<p className="text-[#4b4b4b]">30 Day return</p>
 						</div>
-						<div className="mt-4 mb-2 flex items-center">
+						<div className="mt-4 flex items-center">
 							<img src="/ReactShop/icons/truck.svg" alt="" className="mx-4 w-6 h-6" />
 							<p className="text-[#4b4b4b]">Worldwide shipping</p>
 						</div>
